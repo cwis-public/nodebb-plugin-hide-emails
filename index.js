@@ -19,20 +19,20 @@ exports.init = function(params, callback) {
 			}
 			var isAdmin = userData.isAdmin;
 			var isSelf = userData.isSelf;
-			winston.warn("getUserDataByUserSlug(" + userslug + "," + callerUID + ")");
-			winston.warn("isAdmin: " + isAdmin);
-			winston.warn("isSelf: " + isSelf);
-			winston.warn("userData.email: " + userData.email);
-			winston.warn("userData.emailClass: " + userData.emailClass);
+			//winston.warn("getUserDataByUserSlug(" + userslug + "," + callerUID + ")");
+			//winston.warn("isAdmin: " + isAdmin);
+			//winston.warn("isSelf: " + isSelf);
+			//winston.warn("userData.email: " + userData.email);
+			//winston.warn("userData.emailClass: " + userData.emailClass);
 
 			if(!isAdmin && !isSelf) {
-				winston.warn("Hiding email address");
+				//winston.warn("Hiding email address");
 				userData.email = '';
 				userData.emailClass = 'hide';
 			}
 
-			winston.warn("*result* userData.email: " + userData.email);
-			winston.warn("*result* userData.emailClass: " + userData.emailClass);
+			//winston.warn("*result* userData.email: " + userData.email);
+			//winston.warn("*result* userData.emailClass: " + userData.emailClass);
 
 			return callback(null, userData);
 		});
