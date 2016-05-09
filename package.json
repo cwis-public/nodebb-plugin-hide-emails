@@ -1,0 +1,19 @@
+{
+  "name": "nodebb-plugin-hide-emails",
+  "version": "1.0.0",
+  "description": "Hide email from all users, except admins. By default, Global Moderators are able to see emails, which this plugin prevents.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cwis-public/nodebb-plugin-hide-emails.git"
+  },
+  "author": "Christopher Allène <cwiiss@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cwis-public/nodebb-plugin-hide-emails/issues"
+  },
+  "homepage": "https://github.com/cwis-public/nodebb-plugin-hide-emails"
+}
