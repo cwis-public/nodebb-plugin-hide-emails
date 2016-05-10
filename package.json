@@ -1,6 +1,6 @@
 {
   "name": "nodebb-plugin-hide-emails",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Hide email from all users, except admins. By default, Global Moderators are able to see emails, which this plugin prevents.",
   "main": "index.js",
   "scripts": {
