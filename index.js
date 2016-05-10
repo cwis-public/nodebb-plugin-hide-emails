@@ -14,8 +14,8 @@ exports.init = function(params, callback) {
 	var oldGetUserDataByUserSlug = accountHelpers.getUserDataByUserSlug;
 	accountHelpers.getUserDataByUserSlug = function(userslug, callerUID, callback) {
 		oldGetUserDataByUserSlug(userslug, callerUID, function(err, userData) {
-			if(err) {
-				return callback(err);
+			if(err || typeof userData !== "object") {
+				return callback.apply(this, arguments);
 			}
 			var isAdmin = userData.isAdmin;
 			var isSelf = userData.isSelf;
